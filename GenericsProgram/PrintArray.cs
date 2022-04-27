@@ -18,8 +18,6 @@ namespace GenericsProgram
                     max = arr[i];
                 }
             Console.WriteLine("Maximum in given " + "array is " + max);
-
-
         }
         public void MaxElement(float[] arr1)
         {
@@ -31,8 +29,21 @@ namespace GenericsProgram
                     max = arr1[i];
                 }
             Console.WriteLine("Maximum in given " + "array is " + max);
-
-
+        }
+        public void MaxElement(string[] arr2)
+        {
+            int max_str = arr2[0].Length;
+            string ans = arr2[0];
+            for (int i = 1; i < arr2.Length; i++)
+            {
+                int maximum = arr2[i].Length;
+                if (maximum > max_str)
+                {
+                    ans = arr2[i];
+                    max_str = maximum;
+                }
+            }
+            Console.WriteLine("Maximum in given " + "array is " + ans);
         }
     }
 }
