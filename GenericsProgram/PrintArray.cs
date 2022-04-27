@@ -21,5 +21,18 @@ namespace GenericsProgram
 
 
         }
+        public void MaxElement(float[] arr1)
+        {
+            int i;
+            float max = arr1[0];
+            for (i = 1; i < arr1.Length; i++)
+                if (arr1[i] > max)
+                {
+                    max = arr1[i];
+                }
+            Console.WriteLine("Maximum in given " + "array is " + max);
+
+
+        }
     }
 }
